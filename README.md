@@ -7,7 +7,7 @@ SassyCache [![forthebadge](http://forthebadge.com/badges/built-with-love.svg)](h
 - bower install sassycache --save-dev
 
 ### Requirements
-- Sass ~> 3.3
+- [Sass](http://sass-lang.com) ~> 3.3
 
 
 ### Credits
