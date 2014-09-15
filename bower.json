@@ -21,7 +21,7 @@
     "test",
     "tests"
   ],
-  "dependencies": {
+  "devDependencies": {
     "sassybreakpoint": "~0.0.2",
     "sassyplaceholder": "~0.0.3"
   }
