@@ -1,0 +1,28 @@
+{
+  "name": "SassyCache",
+  "version": "0.0.1",
+  "authors": [
+    "johngerome <johngerome@gmail.com>"
+  ],
+  "description": "Sassy way on caching property values.",
+  "main": "_sassy-cache.scss",
+  "keywords": [
+    "sass",
+    "framework",
+    "sassy",
+    "cache"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/SassyFramework/SassyCache",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "sassybreakpoint": "~0.0.2",
+    "sassyplaceholder": "~0.0.3"
+  }
+}

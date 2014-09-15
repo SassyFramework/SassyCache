@@ -1,0 +1,30 @@
+
+
+// v0.0.1
+
+@mixin sf-cache($declarations){
+    @include sf-cache-declaration($declarations);
+}
+
+
+@mixin sf-cache-declaration($declarations) {
+    // Looping through all properties/values from map
+    @each $property, $value in $declarations {
+        // Get the stored values for the current property
+
+        $stored-values: map-get($sf-cache-css-declarations, $property);
+
+        // If the value doesn't exist in stored values
+        @if not index($stored-values, $value) {
+            // Add it
+            $sf-cache-css-declarations: map-merge($sf-cache-css-declarations, ($property: append($stored-values or (), $value))) !global;
+            // And create a placeholder at root level
+            @at-root %#{$property}-#{length(map-get($sf-cache-css-declarations, $property))} {
+                #{$property}: $value;
+            }
+        }
+
+        // Extend the placeholder
+        @extend %#{$property}-#{index(map-get($sf-cache-css-declarations, $property), $value)};
+    }
+}

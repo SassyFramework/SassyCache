@@ -1,0 +1,51 @@
+
+@import "../sassy-cache";
+@import "sassybreakpoint/sassy-breakpoint";
+@import "sassyplaceholder/sassy-placeholder";
+
+/**
+ * Expected OUTPUT:
+ *
+ * header, aside, footer {
+ *    width: 100%;
+ * }
+ *
+ * header{
+ *    border: 1px solid #000;
+ * }
+ *
+ * header, aside{
+ *    font-family: "Open Sans", Arial, serif;
+ * }
+ *
+ * aside{
+ *    border: 1px solid #fff;
+ * }
+ *
+ */
+header{
+    @include sf-cache((
+        width: 100%,
+        border: 1px solid #000,
+        font-family: ("Open Sans", Arial, serif),
+    ));
+}
+
+
+
+
+
+aside{
+    @include sf-cache((
+        width: 100%,
+        border: 1px solid #fff,
+        font-family: ("Open Sans", Arial, serif),
+    ));
+}
+
+
+
+
+footer{
+    @include sf-cache((width: 100%));
+}

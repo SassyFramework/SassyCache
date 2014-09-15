@@ -1,0 +1,31 @@
+/**
+ * Expected OUTPUT:
+ *
+ * header, aside, footer {
+ *    width: 100%;
+ * }
+ *
+ * header{
+ *    border: 1px solid #000;
+ * }
+ *
+ * header, aside{
+ *    font-family: "Open Sans", Arial, serif;
+ * }
+ *
+ * aside{
+ *    border: 1px solid #fff;
+ * }
+ *
+ */
+header, aside, footer {
+  width: 100%; }
+header {
+  border: 1px solid #000; }
+header, aside {
+  font-family: "Open Sans", Arial, serif; }
+
+aside {
+  border: 1px solid #fff; }
+
+/*# sourceMappingURL=test.css.map */
